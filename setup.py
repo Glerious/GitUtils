@@ -6,11 +6,11 @@ with open("README", 'r') as f:
 
 setup(
    name=main.__name__,
-   version='0.0.1',
-   description='Utils module for programing',
+   version=main.__version__,
+   description='Utils modules for programming',
    long_description=long_description,
    author=main.__author__,
    author_email='jonascouturon2@gmail.com',
-   url="http://www.foopackage.example/",
-   install_requires=['numpy'], #external packages as dependencies
+   url=main.__github__,
+   install_requires=['numpy']
 )
