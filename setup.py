@@ -12,5 +12,5 @@ setup(
    author=main.__author__,
    author_email='jonascouturon2@gmail.com',
    url=main.__github__,
-   install_requires=['numpy']
+   install_requires=['numpy', 'deprecated']
 )

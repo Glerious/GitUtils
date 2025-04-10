@@ -29,5 +29,3 @@ class Planete:
             cos(rev2deg(t_, self.get_revolution())), 
             sin(rev2deg(t_/self.get_revolution())), 
             0])
-
-EARTH = Planete(sun_mass_compare_=1/332_946.0487, ray_=6378, influence_=9e5, to_sun_=150e6, speed_=29.78)
