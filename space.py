@@ -8,7 +8,7 @@ K = 0.017_202_098_95 # equals to the root of GM_s
 class Planete:
     def __init__(self, ray_: int, influence_: int,
                  to_sun_: int = 0, speed_: float = 0,
-                 sun_mass_compare_: float = 0, mass_: float = 0):
+                 sun_mass_compare_: float = 1):
         self.mass_compare: float = sun_mass_compare_
         self.ray: int = ray_
         self.to_sun: int = to_sun_
