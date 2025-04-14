@@ -3,7 +3,7 @@ from maths import rev2deg
 from numpy import array, ndarray, pi, cos, sin
 
 G = 6.67384e-11
-K = 0.017_202_098_95 # equals to the root of GM_s
+K = 0.017_202_098_95 # equals to the root of GM_s   
 
 class Planete:
     def __init__(self, ray_: int, influence_: int,

@@ -92,6 +92,7 @@ class EdoResolution:
         return y
     
     def error(self, method: Methods) -> ndarray:
+        # Find way to replace enum (enum code create bug to push)
         match method:
             case self.Methods.EULER_EXPLICITE:
                 _result = self.euler_explicite()
@@ -109,4 +110,3 @@ def rev2deg(rev_: float, base_: float) -> float:
 
 def deg2rev(deg_: float, base_: float) -> float:
     return base_*deg_/(2*pi)
-    
