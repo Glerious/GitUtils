@@ -32,4 +32,4 @@ class Planete:
     
 SUN = Planete(ray_=6.957e8, influence_=15e9)
 EARTH = Planete(ray_=6378, influence_=9e5, to_sun_=150e6, speed_=29.78, sun_mass_compare_=1/332_946.0487, )
-JUPITER = Planete(ray_=69911, influence_=48.2e6, to_sun_=5.2026, speed_= 13.0585, sun_mass_compare_=_=1/1047.348625)
+JUPITER = Planete(ray_=69911, influence_=48.2e6, to_sun_=5.2026, speed_= 13.0585, sun_mass_compare_=1/1047.348625)
