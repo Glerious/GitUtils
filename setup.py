@@ -12,6 +12,6 @@ setup(
    author=main.__author__,
    author_email='jonascouturon2@gmail.com',
    url=main.__github__,
-   install_requires=['numpy', 'deprecated'],
-   py_modules=['maths', 'basics', 'space']
+   install_requires=['numpy', 'deprecated', 'json', 'functools'],
+   py_modules=['maths', 'basics', 'space', 'jsonAPI']
 )
