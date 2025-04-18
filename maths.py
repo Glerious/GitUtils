@@ -28,7 +28,7 @@ class EdoResolution:
         self.b = b_
         self.init = init_
         if h_ == N_ == None:
-            raise Exception("Pas nécéssaire.")
+            raise Exception("Définition du pas nécéssaire.")
         if h_ == None:
             self.N = N_
             self.h = float((self.b - self.a) / self.N)
@@ -43,13 +43,11 @@ class EdoResolution:
         RUNGE_KUTTA_4 = 3
 
     def time_intervale(self) -> ndarray:
-        print(array([self.a + self.h * i for i in range(self.N + 1)]).shape)
         return array([self.a + self.h * i for i in range(self.N + 1)])
     
     def initialise_methods(self) -> ndarray:
         _temp = array(self.init)
         _init = zeros((_temp.size, self.N + 1))
-        print(_init.shape)
         _init[:, 0] = _temp
         return _init
 
