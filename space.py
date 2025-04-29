@@ -30,7 +30,7 @@ class Planete:
     def to_sun_vector(self, t_) -> ndarray:
         return self.to_sun*array([
             cos(rev2deg(t_, self.get_revolution())), 
-            sin(rev2deg(t_/self.get_revolution())), 
+            sin(rev2deg(t_, self.get_revolution())),
             0])
     
     def get_hight_gravity(self, height_: float):
