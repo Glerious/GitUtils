@@ -108,3 +108,10 @@ def rev2deg(rev_: float, base_: float) -> float:
 
 def deg2rev(deg_: float, base_: float) -> float:
     return base_*deg_/(2*pi)
+
+def newton_approximation(func_: callable, derived_: callable,
+                 iteration_: int, init_: float):
+    result_ = init_
+    for _ in range(iteration_):
+        result_ = result_ - func_(result_)/derived_(result_)
+    return result_
