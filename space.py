@@ -19,10 +19,7 @@ class Planete:
         return 4*pi**2*self.to_sun**3/K**2
 
     def get_reduce_gravity(self) -> float:
-        return K**2/self.mass_compare
-    
-    def get_gravity(self):
-        return self.get_reduce_gravity()/self.mass_compare*SUN_MASS
+        return K**2*self.mass_compare
     
     def get_mass(self) -> float:
         return self.get_reduce_gravity()/gravitational_constant
@@ -33,8 +30,9 @@ class Planete:
             sin(rev2deg(t_, self.get_revolution())),
             0])
     
-    def get_hight_gravity(self, height_: float):
-        return self.get_gravity()*(self.ray/(self.ray + height_))**2
+    #Add gravity
+    # def get_hight_gravity(self, height_: float):
+    #     return self.get_gravity()*(self.ray/(self.ray + height_))**2
     
 class MorePlanete(Planete):
     def __init__(self, ray_, influence_,
