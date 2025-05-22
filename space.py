@@ -61,4 +61,4 @@ class Module:
 SUN = Planete(ray_=6.957e8, influence_=15e9)
 EARTH = Planete(ray_=6378, influence_=9e5, to_sun_=150e6, speed_=29.78, sun_mass_compare_=1/332_946.0487)
 JUPITER = Planete(ray_=69911, influence_=48.2e6, to_sun_=778e6, speed_= 13.0585, sun_mass_compare_=1/1047.348625)
-VENUS = MorePlanete(ray_=6052e3, influence_=0.616e6, density_=5.25, atmospheric_height_=300, to_sun_=108e6, speed_=35.02571, sun_mass_compare_=1/408423.2152028762)
+VENUS = MorePlanete(ray_=6052e3, influence_=0.616e6, density_=65, atmospheric_height_=300, to_sun_=108e6, speed_=35.02571, sun_mass_compare_=1/408423.2152028762)
