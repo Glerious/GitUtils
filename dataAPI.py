@@ -57,9 +57,9 @@ class CsvAPI:
         _returned: list = []
         for row in self.__data:
             for i in row:
-                row: str
+                i: str
                 if self.__comment_caracter in i:
-                    row.replace("# ", "")
+                    i.replace("# ", "")
                     _returned.append(row)
         return _returned
 
