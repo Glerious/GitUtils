@@ -34,7 +34,7 @@ class EdoResolution:
             self.h = float((self.b - self.a) / self.N)
         else:
             self.h = h_
-            self.N = int((self.b - self.a) / self.h)
+            self.N = int(round((self.b - self.a) / self.h))
         self.analytical = analytical_
 
     class Methods(Enum):
