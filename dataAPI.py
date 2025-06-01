@@ -59,7 +59,7 @@ class CsvAPI:
             for i in row:
                 i: str
                 if self.__comment_caracter in i:
-                    _returned.append([i.replace("# ", "")])
+                    _returned.append(i.replace("# ", ""))
         return _returned
 
     def __save_default(self) -> dict:
