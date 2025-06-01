@@ -42,12 +42,11 @@ class CsvAPI:
     def __init__(self, path_: str, delimiter_: str = ";", comment_caracter_: str = "#"):
         self.__path: str = path_
         self.__delimiter = delimiter_
-        self.__data = self.__save_default()
         self.__comment_caracter = comment_caracter_
 
     def get_data(self) -> list:
         _returned: list = []
-        for row in self.__data:
+        for row in self.__save_default():
             for i in row:
                 if not self.__comment_caracter in i:
                     _returned.append(row)
@@ -55,7 +54,7 @@ class CsvAPI:
 
     def get_comment(self) -> dict:
         _returned: list = []
-        for row in self.__data:
+        for row in self.__save_default():
             for i in row:
                 i: str
                 if self.__comment_caracter in i:
