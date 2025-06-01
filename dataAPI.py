@@ -50,6 +50,7 @@ class CsvAPI:
             for i in row:
                 if not self.__comment_caracter in i:
                     _returned.append(row)
+                    break
         return _returned
 
     def get_comment(self) -> dict:
